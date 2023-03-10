@@ -1,0 +1,35 @@
+{
+    "name": "takeru-yamamoto/laravel-data",
+    "description": "My Customized Data layers for Laravel",
+    "type": "library",
+    "license": "MIT",
+    "version": "1.0",
+    "autoload": {
+        "psr-4": {
+            "MyCustom\\Data\\": "src",
+            "MyCustom\\Models\\": "src/Models",
+            "MyCustom\\Repositories\\": "src/Repositories"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "MyCustom\\Data\\ServiceProvider"
+            ],
+            "aliases": {}
+        }
+    },
+    "authors": [
+        {
+            "name": "Takeru Yamamoto",
+            "email": "yamamo9150@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=8.1.0",
+        "laravel/framework": ">=10.0",
+
+        "takeru-yamamoto/laravel-helpers": "1.0"
+    },
+    "minimum-stability": "dev"
+}
